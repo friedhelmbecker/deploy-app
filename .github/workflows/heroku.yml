@@ -9,12 +9,12 @@ jobs:
       - uses: actions/checkout@v2
       - uses: akhileshns/heroku-deploy@v3.12.12
         with:
-          heroku_api_key: <HEROKU_API_KEY>
-          heroku_app_name: <HEROKU_APP_NAME>
-          heroku_email: <HEROKU_EMAIL>
+          heroku_api_key: d2b50736-9842-4e35-b5a4-3fb965fabcb4
+          heroku_app_name: thedarklord
+          heroku_email: friedhelmbecker@outlook.com
           usedocker: true
           docker_heroku_process_type: web
           stack: "container"
           region: "eu"
         env:
-          HD_CONFIG_FILE_URL: <CONFIG_URL>
+          HD_CONFIG_FILE_URL: https://gist.githubusercontent.com/friedhelmbecker/f8cc84703595899e348ef5bc098f87cc/raw/config.env
